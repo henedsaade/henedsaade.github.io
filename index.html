@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<! IMPORTANT to use a CSS file - external >
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <title>Questionnaire</title>
+  </head>
+  
+  <body>
+	<h1>Questionnaire d'interface usager</h1>
+	<form id="myform" action="index.php" >
+	<br>
+	<br>
+	<! Choose a website to evaluate >
+	<h2>Dans cette questionnaire, nous allons vous demander des questions à-propos de l'IU du site Web <a href="https://playvalorant.com/en-us/">Valorant</a></h2>	
+	<br>
+	<! You should make your image clickable>
+	<a href="https://playvalorant.com/en-us/"><img src="ValorantWebsite.PNG" alt="https://playvalorant.com/en-us/" width="1000" height="500"></a>
+		
+	<div class="question">
+		<h2> Questions: </h2>
+		1. À votre avis, quelles sont les qualités que possède le site web de Valorant?<br>
+		<input type="checkbox" name="Quality" value="Fonctionnement Correct">Fonctionnement Correct<br>
+		<input type="checkbox" name="Quality" value="Cohérence">Cohérence<br>
+		<input type="checkbox" name="Quality" value="Éfficacité">Éfficacité<br>
+		<input type="checkbox" name="Quality" value="Utilisabilité">Utilisabilité<br>
+		<input type="checkbox" name="Quality" value="Fiabilité">Fiabilité<br>
+		<input type="checkbox" name="Quality" value="Sécurité et Integrité des données">Sécurité et Integrité des données<br>
+		
+		<br>
+
+		2. Sur une échelle de 1 à 10, comment évaluez-vous l'IU?<br>
+		<select id="favorite">
+			<option value=" " selected="selected"> </option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select><br>
+
+		<br>
+
+		3. L'interface usager de la page vous incitera-t-elle à y revenir?<br>
+		<input type="radio" name="YesOrNo" value="Oui">Oui<br>
+		<input type="radio" name="YesOrNo" value="Non">Non<br>
+
+		<br>
+
+		4. Avez-vous rencontré des bogues liés à l'IU?<br>
+		<input type="radio" name="YesOrNo" value="Oui">Oui<br>
+		<input type="radio" name="YesOrNo" value="Non">Non<br>
+
+		<br>
+
+		5. Qu'est-ce qui pourrait être amélioré en termes d'IU pour le site web?<br>
+		<input type="text" name="Suggestions" value="" size="80"><br>
+
+		<br>
+		6. Quelle est votre impression générale de l'IU?<br>
+		<select id="favorite">
+			<option value=" " selected="selected"> </option>
+			<option value="Très insatisfait">Très insatisfait</option>
+			<option value="Insatisfait">Insatisfait</option>
+			<option value="Neutre">Neutre</option>
+			<option value="Satisfait">Satisfait</option>
+			<option value="Très satisfait">Très satisfait</option>
+		</select><br>
+		
+	<h3>Commentaires:</h3>
+	<textarea rows="7" cols="82"></textarea>
+			
+	<br>
+	<br>
+			
+	<button id="submitButton" type="button" class="block">
+		Soumettez votre questionnaire
+	</button>
+
+	</div>
+		
+	<p id="signature">Site créé par hennessyiscool (subscribe to my YouTube channel)</p>
+	
+	</form>
+  </body>
+</html> 

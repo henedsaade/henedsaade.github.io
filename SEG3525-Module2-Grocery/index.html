@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  <title>Food Basic</title>
+</head>
+
+<body>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class = "welcome">
+  <h1 id = "Food Basic" style="text-align: center; font-family: Verdana;">Food Basic</h1>
+</div>
+<br>
+<br>
+<div class="tab" style="background-color: #66ff33">
+  
+    <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+    <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+    <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent" style="font-family: DejaVu Sans Mono, monospace">
+  <h3 id="info" >Information de Client</h3>
+  <p>Dites-nous un peu a-propos de vous.</p>
+	Choisissez une catégorie:
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    <option value="None">Select</option>
+    <option value="None">None</option>
+	  <option value="Organic">Organic</option>
+	  <option value="Lactoseintolerant">Lactose-intolerant</option>
+    <option value="NutFree">Nut free</option>
+    
+	</select>
+</div>
+
+<div id="Products" class="tabcontent" style="font-family: DejaVu Sans Mono, monospace">
+  <h3>Vos produits ciblés</h3>
+  <p>Nous avons présélectionné des produits en fonction de vos restrictions.</p>
+	 Choisissez les articles à acheter:
+	 <div id="displayProduct"></div>
+   <br>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()" style="background-color: #99ff99">
+		Ajoutez les articles sélectionnés au panier.
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent" style="font-family: DejaVu Sans Mono, monospace">
+  <h3>Panier</h3>
+  <p>Voici votre panier.</p>
+  <div id="displayCart"></div>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</div>
+		
+<p id="signature">Site créé par hennessyiscool</p>
+
+</html>

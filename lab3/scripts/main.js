@@ -238,7 +238,7 @@ function displayListItems(options) {
     if (document.getElementById("firstNameInput").value !== '') {
 
         document.getElementById("welcomeMsg").innerHTML =
-            "<h3>Hello" + " " + document.getElementById("firstNameInput").value + "! Here are your targeted products!" + "</h3>";
+            "<h2>Bonjour" + " " + document.getElementById("firstNameInput").value + "! Voici vos produits ciblés!" + "</h2>";
 
         document.getElementById("submit-btn").style.display = "block";
         for (var i = 0; i < userItems.length; i++) {

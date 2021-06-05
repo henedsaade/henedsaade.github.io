@@ -392,3 +392,12 @@ function getTotalPrice(chosenProducts) {
     }
     return totalPrice;
 }
+
+document.getElementById("pickup-btn").addEventListener("click", function() {
+    alert("Merci d'avoir fait vos achats chez Food Basic, à bientôt!");
+});
+
+
+document.getElementById("delivery-btn").addEventListener("click", function() {
+    alert("Merci d'avoir fait vos achats chez Food Basic, nous vous contacterons sous peu pour plus d'informations!");
+});

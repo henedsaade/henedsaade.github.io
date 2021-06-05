@@ -1,4 +1,4 @@
-# SEG3125-Module3-Grocery
+# SEG3525-Module3-Grocery
 
 
-https://robertbasile-1.github.io/SEG3125-Module3-Grocery/
+https://henedsaade.github.io/SEG3525-Module3-Grocery/

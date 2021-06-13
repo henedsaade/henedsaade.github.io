@@ -11,7 +11,7 @@ This will help you get started with your code!
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
-    <title>Module 4 Lab</title>
+    <title>Clinique Saade</title>
 </head>
 <body>
 <!--
@@ -27,13 +27,12 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     -->
 
     <nav class="navbar bg-dark text-white p-3 my-3 ">
-        <h1><img src="images/company_logo.png" width="130" height="130"> Welcome to my Physiotherapy Clinic</h1>
+        <h1><img src="images/logo.jpg" width="130" height="130"> Bienvenue à la Clinique Saade</h1>
     </nav>
 
     <div class=" p-3 my-3 border bg-light">
-        <h1 class=""> About us</h1>
-        <p class="p-4 my-3" style="font-size: 25px">We are a small clinic located in Smiths Falls Ontario</p>
-        <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers</p>
+        <h1 class=""> À propos de nous</h1>
+        <p style="font-size: 25px">Nous sommes une petite clinique familiale située à l'adresse 3031 Rue St-Laurent à Ottawa, Ontario. Nous nous engageons à fournir les <strong>meilleurs</strong> soins à nos clients. </p>
     </div>
     <!--
     Tables are one of many ways to organize information easily.
@@ -48,99 +47,72 @@ Many websites will use what is called CSS grid layouts, where you will have a he
             </tr>
         </thead>
         <tbody>
+            <!-- First service -->
             <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
+                <td><strong>Thérapie par l'Exercice</strong></td>
+                <td>Axé sur les principes de force et de conditionnement pour atteindre les objectifs de réhabilitation et de performance.</td>
             </tr>
+            <!-- Second service -->
             <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
+                <td><strong>Thérapie Manuelle</strong></td>
+                <td>Compris des mobilisations des tissus mous, les mobilisations graduelles des articulations et les étirements passifs pour améliorer l'extensibilité des tissus, augmenter l'amplitude des mouvements, moduler la douleur et réduire le gonflement et l'inflammation des tissus mous.</td>
             </tr>
+            <!-- Third service -->
             <tr>
-                <td>Placeholder 1</td>
-                <td>Placeholder 2</td>
+                <td><strong>Acupuncture</strong></td>
+                <td>Pour moduler la douleur et réduire l'inflammation.</td>
+            </tr>
+            <!-- Fourth service -->
+            <tr>
+                <td><strong>Réadaptation Posturale</strong></td>
+                <td>Pour réduire les douleurs chroniques liées à un dysfonctionnement postural.</td>
+            </tr>
+            <!-- Fifth service -->
+            <tr>
+                <td><strong>Thérapie par le Yoga</strong></td>
+                <td>Résolution de la douleur et de la souffrance (physique, émotionnelle, mentale) par la prise de conscience pour un bien-être reposant, la paix et la facilité dans la vie de tous les jours.</td>
             </tr>
         </tbody>
     </table>
-    <h1>Here is an alert!</h1>
-    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
-    https://getbootstrap.com/docs/5.0/components/alerts/
-    -->
-    <p>This indicated something important in the page</p>
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong>Yikes!</strong> Perhaps you left one of the fields empty for this to appear?
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-
-    <h1>Button States</h1>
-    <!--
-    Buttons can be used for submitting forms, triggering events among many other things.
-    https://getbootstrap.com/docs/5.0/components/buttons/
-    -->
-
-    <button type="button" class="btn btn-warning">Primary Button</button>
-    <button type="button" class="btn btn-warning active">Active Button</button>
-    <button type="button" class="btn btn-warning" disabled>Disabled Button</button>
-
-    <h1>Modal Example</h1>
-
-    <!-- Button trigger modal
-    We use the same button code from above, but now we can trigger a modal to appear.
-    The bootstrap tutorial includes many different types of modals that you can explore
-    https://getbootstrap.com/docs/5.0/components/modal/
-    -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    In the body we can add various components. In this example some radio buttons
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Yes
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            No
-                        </label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- Cards are quite useful when building a website. They are a useful way to organize information.
     They can be organized using a CSS grid or other layout options.
     https://getbootstrap.com/docs/5.0/components/card/
     -->
 
-    <h1>Meet the Physicians!</h1>
+    <h1>Rencontrez les physiothérapeutes!</h1>
     <div class="row justify-content-around">
+        <!-- First doctor -->
         <div class="card" style="width: 18rem;">
-            <img src="images/doctor.jpg" class="card-img-top" alt="...">
+            <img src="images/doctor4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">Here is some filler text, in here you can describe your doctor</p>
+                <p class="card-text"><strong> <b>Dr. Nassab Rouhana </b></strong>
+                <p class="card-text">Dr. Nassab Rouhana est spécialisée dans la Thérapie par l'Exercice.</p>
             </div>
         </div>
+        <!-- Second doctor -->
         <div class="card" style="width: 18rem;">
-            <img src="images/doctor.jpg" class="card-img-top" alt="...">
+            <img src="images/doctor2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">Here is some filler text, in here you can describe your doctor</p>
+                <p class="card-text"><strong> <b>Dr. Marie-Josée Saade</b></strong>
+                <p class="card-text">Dr. Marie-Josée Saade est spécialisée dans Thérapie Manuelle.</p>
+            </div>
+        </div>
+        <!-- Third doctor -->
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><strong> <b>Dr. Sarah Saade</b></strong>
+                <p class="card-text">Dr. Sarah Saade est spécialisée dans l'Acupuncture.</p>
+            </div>
+        </div>
+        <!-- Fourth doctor -->
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><strong> <b>Dr. Hened Saade</b></strong>
+                <p class="card-text">Dr. Hened Saade est spécialisée dans la Réadaptation Posturale et la Thérapie par le Yoga.</p>
             </div>
         </div>
     </div>
@@ -149,51 +121,290 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     We can also use buttons to expand some hidden options
     https://getbootstrap.com/docs/5.0/components/collapse/
     -->
-    <h1>More Information</h1>
-
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Button To Expand Options
-    </button>
-
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            Here we have some hidden data to avoid cluttering the page with information
-        </div>
-    </div>
+    <br>
+    <h1>Prenez une rendez-vous avec l'un de nos physiothérapeutes ci-dessous:</h1>
 
     <!-- This example is using what is called an accordian, this is one of three examples
     https://getbootstrap.com/docs/5.0/components/accordion/
     -->
 
     <div class="accordion accordion-flush" id="accordionFlushExample">
+        <!-- First expand -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Accordion Item #1
+                    Dr. Nassab Rouhana disponibilité pour des rendez-vous
                 </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can put information in this area</div>
+
+                <div class="accordion-body"><strong>Lundi-Jeudi: 9h00-13h00</strong>
+
+                <br>
+                <br>
+
+                    <form>
+                        <!-- First name -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Prénom</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Prénom">
+                        </div>
+                        <!-- Last name -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nom</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Courriel</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="example@email.com">
+                        </div>
+                        <!-- Phone number -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Numéro de téléphone</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="555-555-5555">
+                        </div>
+                        <!-- Prefered time -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Heure Préféréé</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>9h00</option>
+                                <option>10h00</option>
+                                <option>11h00</option>
+                                <option>12h00</option>
+                                <option>13h00</option>
+                                <option>Aucune préférence</option>
+                            </select>
+                        </div>
+                        <!-- Prefered day -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Jours Préféréé</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Lundi</option>
+                                <option>Mardi</option>
+                                <option>Mercredi</option>
+                                <option>Jeudi</option>
+                                <option>Aucune préférence</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Soumettre">
+                    </form>
+                </div>
+
+
+
             </div>
         </div>
+        <!-- Second expand -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Accordion Item #2
+                    Dr. Marie-Josée Saade disponibilité pour des rendez-vous
                 </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can put information in this area</div>
+
+                <div class="accordion-body"><strong>Mercredi-Vendredi: 9h00-15h00</strong>
+
+                <br>
+                <br>
+
+                    <form>
+                        <!-- First name -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Prénom</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Prénom">
+                        </div>
+                        <!-- Last name -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nom</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Courriel</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="example@email.com">
+                        </div>
+                        <!-- Phone number -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Numéro de téléphone</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="555-555-5555">
+                        </div>
+                        <!-- Prefered time -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Heure Préféréé</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>9h00</option>
+                                <option>10h00</option>
+                                <option>11h00</option>
+                                <option>12h00</option>
+                                <option>13h00</option>
+                                <option>14h00</option>
+                                <option>15h00</option>
+                                <option>Aucune préférence</option>
+                            </select>
+                        </div>
+                        <!-- Prefered day -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Jours Préféréé</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Mercredi</option>
+                                <option>Jeudi</option>
+                                <option>Vendredi</option>
+                                <option>Aucune préférence</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Soumettre">
+                    </form>
+                </div>
+
+
+
             </div>
         </div>
+        <!-- Third expand -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Accordion Item #3
+                    Dr. Sarah Saade disponibilité pour des rendez-vous
                 </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can place information in this area</div>
+
+                <div class="accordion-body"><strong>Mardi-Vendredi: 10h00-16h00</strong>
+
+                <br>
+                <br>
+
+                    <form>
+                        <!-- First name -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Prénom</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Prénom">
+                        </div>
+                        <!-- Last name -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nom</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Courriel</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="example@email.com">
+                        </div>
+                        <!-- Phone number -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Numéro de téléphone</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="555-555-5555">
+                        </div>
+                        <!-- Prefered time -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Heure Préféréé</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>10h00</option>
+                                <option>11h00</option>
+                                <option>12h00</option>
+                                <option>13h00</option>
+                                <option>14h00</option>
+                                <option>15h00</option>
+                                <option>16h00</option>
+                                <option>Aucune préférence</option>
+                            </select>
+                        </div>
+                        <!-- Prefered day -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Jours Préféréé</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Mardi</option>
+                                <option>Mercredi</option>
+                                <option>Jeudi</option>
+                                <option>Vendredi</option>
+                                <option>Aucune préférence</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Soumettre">
+                    </form>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <!-- Fourth expand -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Dr. Hened Saade disponibilité pour des rendez-vous
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><strong>Mardi-Vendredi: 9h00-14h00</strong>
+
+                <br>
+                <br>
+
+                    <form>
+                        <!-- First name -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Prénom</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Prénom">
+                        </div>
+                        <!-- Last name -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nom</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Courriel</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="example@email.com">
+                        </div>
+                        <!-- Phone number -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Numéro de téléphone</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="555-555-5555">
+                        </div>
+                        <!-- Prefered time -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Heure Préféréé</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>9h00</option>
+                                <option>10h00</option>
+                                <option>11h00</option>
+                                <option>12h00</option>
+                                <option>13h00</option>
+                                <option>14h00</option>
+                                <option>Aucune préférence</option>
+                            </select>
+                        </div>
+                        <!-- Prefered day -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Jours Préféréé</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Mardi</option>
+                                <option>Mercredi</option>
+                                <option>Jeudi</option>
+                                <option>Vendredi</option>
+                                <option>Aucune préférence</option>
+                            </select>
+                        </div>
+                        <!-- Service choice -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Service</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Réadaptatioin Posturale</option>
+                                <option>Thérapie par le Yoga</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Soumettre">
+                    </form>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -202,4 +413,5 @@ Many websites will use what is called CSS grid layouts, where you will have a he
 <!-- here we input our javascript helper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
+<p style="text-align: right;" id="signature">Site créé par hennessyiscool</p>
 </html>

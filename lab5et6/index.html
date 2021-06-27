@@ -10,7 +10,7 @@
 
 <!-- The head should contain an appropriate title for your site -->
 <head>
-    <title>Module 5 - Lab</title>
+    <title>Clinique Saade</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,21 +38,26 @@
 <!-- As your page is a vertical page (Module 4 requirement), you mus use the navbar -->
 <!-- to just jump to parts of the page. What I put as First/Second/Third here would -->
 <!-- be sections in your page. -->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-warning fixed-top"; style="position: sticky">
+    <a class="navbar-brand" href="#">Clinique Saade</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#first"><img src="images/peigne.png" alt="logo" style="width:30px;">First</a>
+                <a class="nav-link" href="#À propos de nous">À propos de nous</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#second"><img src="images/tiger.png" alt="logo" style="width:30px;">Second</a>
+                <a class="nav-link" href="#Services">Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#third">Third</a>
+                <a class="nav-link" href="#Équipe">Équipe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Rendez-vous">Rendez-vous</a>
             </li>
         </ul>
     </div>
@@ -61,34 +66,217 @@
 
 <!-- Just arbitrary divisions to see the link from the NavBar -->
 <!-- Also, notice the use of the icon repeated from the menu to add grouping -->
-<div class="container" id="first">
-    <h3><img src="images/peigne.png" alt="logo" style="width:40px;">First Item</h3>
-    <p>Display text 1 </p>
-    <p>Display text 2 </p>
-    <p>Display text 3 </p>
-    <p>Display text 4 </p>
-    <p>Display text 5 </p>
-    <p>Display text 6 </p>
-</div>
+<div class = "container-lg">
 
-<div class="container" id="second">
-    <h3><img src="images/tiger.png" alt="logo" style="width:40px;">Second Item</h3>
-    <p>Display text 1 </p>
-    <p>Display text 2 </p>
-    <p>Display text 3 </p>
-    <p>Display text 4 </p>
-    <p>Display text 5 </p>
-    <p>Display text 6 </p>
-</div>
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
 
-<!-- This section contains elements to be validated -->
-<!-- Refer to the JavaScript file, where JQuery is used to listen to those inputs using the ids -->
-<div class="container" id="third">
-    <h3>Third Item</h3>
-    <p>Date: <input type="text" id="dateInput"></p>
-    <p>Phone Number Example <input value="(1234)" type="text" id="phone"></p>
-    <p>Credit Card: <input type="text" id="debit" title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
-</div>
+    <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><img src="images/logo.jpg" width="130" height="130"> Bienvenue à la Clinique Saade</h1>
+    </nav>
 
+    <nav id="À propos de nous" class=" p-3 my-3 border bg-light">
+        <h1 class=""> À propos de nous</h1>
+        <p style="font-size: 25px">Nous sommes une petite clinique familiale située à Ottawa, Ontario. Nous nous engageons à fournir les <strong>meilleurs</strong> soins à nos clients. </p>
+        <h4 class=""> Adresse</h4>
+        <p class=" p-1 my-3" style="font-size: 15px;">3031 Rue St-Laurent<br>K1K 0L1<br>Ottawa, Ontario, Canada</p>
+        <h4 class=""> Heure d'opération</h4>
+        <p class=" p-1 my-3" style="font-size: 15px;"><strong>Lundi-Vendredi:</strong> 9h00-15h00 <br> <strong>Samedi-Dimanche:</strong> Fermé</p>
+    </nav>
+
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+
+    <nav id="Services">
+        <h1 class="" ><img src="images/services.png" width="130" height="130">Services offertes:</h1>
+    </nav>
+
+    <br>
+
+    <table class="table table-info table-hover">
+        <thead>
+            <tr>
+                <th scope="col"><h2>Services</h2></th>
+                <th scope="col"><h2>Descriptions</h2></th>
+                <th scope="col"><h2>Prix</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- First service -->
+            <tr>
+                <td><strong>Thérapie par l'Exercice</strong></td>
+                <td>Axé sur les principes de force et de conditionnement pour atteindre les objectifs de réhabilitation et de performance.</td>
+                <td><strong>100.00$</strong></td>
+            </tr>
+            </tr>
+            <!-- Second service -->
+            <tr>
+                <td><strong>Thérapie Manuelle</strong></td>
+                <td>Compris des mobilisations des tissus mous, les mobilisations graduelles des articulations et les étirements passifs pour améliorer l'extensibilité des tissus, augmenter l'amplitude des mouvements, moduler la douleur et réduire le gonflement et l'inflammation des tissus mous.</td>
+                <td><strong>75.00$</strong></td>
+            </tr>
+            <!-- Third service -->
+            <tr>
+                <td><strong>Acupuncture</strong></td>
+                <td>Pour moduler la douleur et réduire l'inflammation.</td>
+                <td><strong>150.00$</strong></td>
+            </tr>
+            <!-- Fourth service -->
+            <tr>
+                <td><strong>Réadaptation Posturale</strong></td>
+                <td>Pour réduire les douleurs chroniques liées à un dysfonctionnement postural.</td>
+                <td><strong>80.00$</strong></td>
+            </tr>
+            <!-- Fifth service -->
+            <tr>
+                <td><strong>Thérapie par le Yoga</strong></td>
+                <td>Résolution de la douleur et de la souffrance (physique, émotionnelle, mentale) par la prise de conscience pour un bien-être reposant, la paix et la facilité dans la vie de tous les jours.</td>
+                <td><strong>50.00$</strong></td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+    <nav id="Équipe">
+        <h1 class="" ><img src="images/equipe.png" width="130" height="130">   Rencontrez les physiothérapeutes!</h1>
+    </nav>
+    <div class="row justify-content-around">
+        <!-- First doctor -->
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><strong> <b>Dr. Nassab Rouhana </b></strong>
+                <p class="card-text">Dr. Nassab Rouhana est spécialisée dans la Thérapie par l'Exercice.</p>
+            </div>
+        </div>
+        <!-- Second doctor -->
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><strong> <b>Dr. Marie-Josée Saade</b></strong>
+                <p class="card-text">Dr. Marie-Josée Saade est spécialisée dans Thérapie Manuelle.</p>
+            </div>
+        </div>
+        <!-- Third doctor -->
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><strong> <b>Dr. Sarah Saade</b></strong>
+                <p class="card-text">Dr. Sarah Saade est spécialisée dans l'Acupuncture.</p>
+            </div>
+        </div>
+        <!-- Fourth doctor -->
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><strong> <b>Dr. Hened Saade</b></strong>
+                <p class="card-text">Dr. Hened Saade est spécialisée dans la Réadaptation Posturale et la Thérapie par le Yoga.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+    <br>
+
+    <nav id="Rendez-vous">
+        <h1 class="" ><img src="images/appointment.png" width="130" height="130">Rendez-vous</h1>
+    </nav>
+    <h4>Remplis votre information pour un rendez-vous ci-dessous:</h4>
+
+    <!-- This example is using what is called an accordian, this is one of three examples
+    https://getbootstrap.com/docs/5.0/components/accordion/
+    -->
+            <div class="container">
+
+                    <form>
+                        <!-- First name -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Prénom</label>
+                            <input type="text" class="form-control" id="FirstNameInput" placeholder="Prénom">
+                        </div>
+                        <!-- Last name -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nom</label>
+                            <input type="text" class="form-control" id="LastNameInput" placeholder="Nom">
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Courriel</label>
+                            <input type="text" class="form-control" id="emailInput" placeholder="example@email.com">
+                        </div>
+                        <!-- Phone number -->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Numéro de téléphone</label>
+                            <input type="text" class="form-control" id="phone" placeholder="555-555-5555">
+                        </div>
+                        <!-- Prefered time -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Heure Préféréé</label>
+                            <select class="form-control" id="hourInput">
+                                <option>9h00</option>
+                                <option>10h00</option>
+                                <option>11h00</option>
+                                <option>12h00</option>
+                                <option>13h00</option>
+                                <option>14h00</option>
+                                <option>Aucune préférence</option>
+                            </select>
+                        </div>
+                        <!-- Prefered date -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Date Préféréé</label>
+                            <p> <input type="date" id="dateInput">
+                        </div>
+                        <!-- Prefered doctor -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Docteur</label>
+                            <select class="form-control" id="doctorInput">
+                                <option>Dr. Nassab Rouhana</option>
+                                <option>Dr. Marie-Josée Saade</option>
+                                <option>Dr. Sarah Saade</option>
+                                <option>Dr. Hened Saade</option>
+                            </select>
+                        </div>
+                        <!-- Service choice -->
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Service</label>
+                            <select class="form-control" id="serviceInput">
+                                <option>Thérapie par l'Exercice</option>
+                                <option>Thérapie Manuelle</option>
+                                <option>Acupuncture</option>
+                                <option>Réadaptation Posturalle</option>
+                                <option>Thérapie par le Yoga</option>
+                            </select>
+                        </div>
+                        <!-- Credit card-->
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Carte de crédit</label>
+                            <input type="text" class="form-control" id="creditInput" placeholder="9999 9999 9999 9999">
+                        </div>
+                        <input type="submit" class="btn btn-primary" id="appointmentBooking" value="Soumettre">
+                    </form>
+                </div>
+
+
+            </div>
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
+<p style="text-align: right;" id="signature">Site créé par hennessyiscool</p>
 </html>

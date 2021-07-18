@@ -8,7 +8,7 @@ const ServicesTable = () => {
             <table class="table table-hover" style={{'color':'rgba(0, 0, 153, 1)'}}>
                 <thead>
                     <tr>
-                        <th scope="col"><h2>Nom</h2></th>
+                        <th scope="col"><h2>Nom des animaux</h2></th>
                         <th scope="col"><h2></h2></th>
                         <th scope="col"><h2>Descriptions</h2></th>
                         <th scope="col"><h2>Prix</h2></th>

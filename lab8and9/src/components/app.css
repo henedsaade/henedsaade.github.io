@@ -1,0 +1,12 @@
+.row {
+    column-count:4;
+    font-weight: bold;
+    padding:5px;
+    color: rgba(0, 0, 153, 1);
+}
+.column {
+    width: 25% !important;
+    font-weight: bold;
+    color: rgba(0, 0, 153, 1);
+}
+

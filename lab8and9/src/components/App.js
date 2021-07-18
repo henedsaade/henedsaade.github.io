@@ -1,5 +1,4 @@
 import Navbar from './Navbar';
-import Table from 'react-bootstrap/Table';
 
 import React from 'react';
 

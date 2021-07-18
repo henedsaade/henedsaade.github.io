@@ -2,11 +2,11 @@
     column-count:4;
     font-weight: bold;
     padding:5px;
-    color: rgba(0, 0, 153, 1);
+    color: rgb(66, 51, 122);
 }
 .column {
     width: 25% !important;
     font-weight: bold;
-    color: rgba(0, 0, 153, 1);
+    color: rgb(66, 51, 122);
 }
 

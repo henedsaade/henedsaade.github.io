@@ -12,3 +12,23 @@ responses:
            Check your inbox at {email} in order to finish subscribing to the newsletter!
        - text: |
            You're all set! Check your inbox at {email} to confirm your subscription.
+   utter_explain:
+       - text: |
+           Can you tell us the reason for this?
+       - text: |
+           Could you provide an explanation?
+   utter_goodbye:
+       - text: |
+           Bye!
+       - text: Goodbye
+       - text: See you next time!
+       - text: Bye-bye
+   utter_unsubscribed:
+       - text: |
+           Okay, no problem. Your email has been removed from the newsletter. 
+       - text: |
+           We're sorry to see you go! Your email has been removed from the newsletter. 
+       - text: |
+           Of course, we understand! Your email has been removed from the newsletter. 
+       - text: |
+           Your email has been removed from the newsletter. Let us know if you'd ever like to rejoin. 

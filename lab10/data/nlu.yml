@@ -57,7 +57,7 @@ nlu:
     - I would like to unsubscribe
     - I'd like to unsubscribe
 
-- intent: explain # Requirement 2: Unsubscribe explanation
+- intent: explain # Create unsubscribe explanation
   examples: |
     - I was receiving too many emails.
     - Because I am no longer interested.

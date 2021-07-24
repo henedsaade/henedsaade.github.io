@@ -1,4 +1,4 @@
-stories: # Requirement 1d: Modify story to use thank you + goodbye
+stories: # Modify user story to use the thank you and goodbye intent
   - story: greet and subscribe
     steps:
     - intent: greet
@@ -12,7 +12,7 @@ stories: # Requirement 1d: Modify story to use thank you + goodbye
     - action: utter_goodbye
 
 
-  - story: greet and unsubscribe # Requirement 2: Add a new greet and unsubscribe story
+  - story: greet and unsubscribe # Add the greet and unsubscribe story
     steps:
     - intent: greet
     - action: utter_greet

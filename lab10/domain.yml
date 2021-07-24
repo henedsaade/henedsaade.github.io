@@ -31,7 +31,7 @@ responses:
         Check your inbox at {email} in order to finish subscribing to the newsletter!
     - text: |
         You're all set! Check your inbox at {email} to confirm your subscription.
-  utter_your_welcome:
+  utter_thanks:
     - text: |
         You're welcome.
     - text: |
@@ -39,7 +39,7 @@ responses:
     - text: |
         Happy to help.
     - text: |
-        Any time!
+        No problem!
   utter_goodbye:
     - text: |
         Goodbye!
@@ -53,21 +53,21 @@ responses:
     - text: |
         We're sorry to see you go. You are now unsubscribed.
     - text: |
-        You will no longer receive our newsletter. You can resubscribe any time!
+        You will no longer receive our newsletter. Let us know if you'd like to resubscribe!
     - text: |
-        You've been removed from our mailing list. We're sorry our emails bothered you.
+        You've been removed from our list. We're sorry our emails bothered you.
     - text: |
         No problem, you'll no longer receive our newsletter.
-  utter_ask_reason:
+  utter_reasoning:
     - text: |
         Could you tell us why you wanted to unsubscribe?
     - text: |
-        Why did you want to unsubscribe?
+        Can you tell us the reason for this?
     - text: |
         What was your reason for unsubscribing?
     - text: |
         For what reason do you want to unsubscribe?
-  utter_sympathy:
+  utter_understand:
     - text: |
         We understand. We hope you'll come back soon!
     - text: |
@@ -81,7 +81,7 @@ actions:
 - utter_greet
 - utter_subscribed
 - utter_unsubscribed
-- utter_sympathy
+- utter_understand
 forms:
   newsletter_form:
     required_slots:

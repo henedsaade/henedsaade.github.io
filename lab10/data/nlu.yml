@@ -1,5 +1,5 @@
 nlu:
-- intent: greet # Requirement 1a: Add 4 new training examples for greeting
+- intent: greet # Add 4 new training examples for greeting
   examples: |
     - Hi
     - Hey!
@@ -28,7 +28,7 @@ nlu:
     - Please send it to anything@example.com
     - Email is something@example.com
 
-- intent: thank_you # Requirement 1b: Define a new thank-you intent
+- intent: thank_you # Create a thank you intent
   examples: |
     - Thanks
     - Thank you
@@ -36,7 +36,7 @@ nlu:
     - Thanks for the help
     - Thanks a lot
 
-- intent: goodbye # Requirement 1c: Define
+- intent: goodbye # Create a goodbye intent
   examples: |
     - Bye
     - Goodbye
@@ -44,7 +44,7 @@ nlu:
     - See ya
     - Have a good day
 
-- intent: unsubscribe # Requirement 2: Unsubscribe story
+- intent: unsubscribe # Create unsubscribe intent
   examples: |
     - I don't want the newsletter
     - Can you remove me from the newsletter?
@@ -57,7 +57,7 @@ nlu:
     - I would like to unsubscribe
     - I'd like to unsubscribe
 
-- intent: explain # Requirement 2: Unsubscribe reasons
+- intent: explain # Requirement 2: Unsubscribe explanation
   examples: |
     - I was receiving too many emails.
     - Because I am no longer interested.

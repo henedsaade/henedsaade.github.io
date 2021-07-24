@@ -7,7 +7,7 @@ stories: # Requirement 1d: Modify story to use thank you + goodbye
     - action: newsletter_form
     - active_loop: newsletter_form
     - intent: thank_you
-    - action: utter_your_welcome
+    - action: utter_thanks
     - intent: goodbye
     - action: utter_goodbye
 
@@ -20,6 +20,6 @@ stories: # Requirement 1d: Modify story to use thank you + goodbye
     - action: unsubscribe_form
     - active_loop: unsubscribe_form
     - intent: thank_you
-    - action: utter_your_welcome
+    - action: utter_thanks
     - intent: goodbye
     - action: utter_goodbye

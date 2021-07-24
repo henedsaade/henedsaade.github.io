@@ -19,7 +19,7 @@ rules:
     - action: unsubscribe_form
     - active_loop: unsubscribe_form
 
-  - rule: submit unsub form
+  - rule: submit unsubscribe form
     condition:
     - active_loop: unsubscribe_form 
     steps:
@@ -35,4 +35,4 @@ rules:
   - rule: say thank you when user says thank you
     steps:
     - intent: thank_you
-    - action: utter_your_welcome
+    - action: utter_thanks

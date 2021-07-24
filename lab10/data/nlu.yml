@@ -35,6 +35,7 @@ nlu:
     - Thank you very much
     - Thanks for the help
     - Thanks a lot
+    - Thank you so much
 
 - intent: goodbye # Create a goodbye intent
   examples: |
@@ -43,6 +44,7 @@ nlu:
     - Bye-bye
     - See ya
     - Have a good day
+    - Peace out
 
 - intent: unsubscribe # Create unsubscribe intent
   examples: |
